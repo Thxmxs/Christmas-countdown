@@ -32,6 +32,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    min-width: 300px;
 
 }
 .container-title{
@@ -45,7 +46,7 @@ body{
    color: var(--White);
    letter-spacing: 7px;
    text-transform: uppercase;
-   font-size: 16px;
+
    
 }
 .container-title img{
@@ -65,6 +66,7 @@ body{
 .boxs-container{
     display: flex;
     justify-content: space-evenly;
+    
 }
 .box-content{
 text-align: center;
@@ -73,6 +75,8 @@ min-width: 71px;
 min-height: 94px;
 width: 15%;
 height: auto;
+transform: translateY(-10px);
+
 }
 .box-content p{
     color: var(--Grayishblue);
@@ -85,7 +89,7 @@ height: auto;
 
 span{
     color: var(--Softred);
-    font-size: 30px;
+    font-size: 35px;
     
 
 }
@@ -177,10 +181,14 @@ width: 100%;
 
 
 @media screen and (min-width: 1024px) {
+    .container-title{
+       transform: translateY(120px);
+       
+    }    
 .box-content{
     width: 170px;
     height: auto;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 .box{
     padding: 40px;
@@ -199,13 +207,13 @@ footer{
     }
     .box-content p{
         margin-top: 23px;
-        font-size: 14px;
+        font-size: 16px;
         letter-spacing: 3px;
         
     }  
     span{
         color: var(--Softred);
-        font-size: 60px;
+        font-size: 76px;
         
     
     }
