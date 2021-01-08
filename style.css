@@ -7,7 +7,7 @@ box-sizing: border-box;
 
 }
 :root{
-    /* primary */
+/* primary */
 --Grayishblue: hsl(237, 18%, 59%);
 --Softred: hsl(345, 95%, 68%);
 /* neutral*/
@@ -38,9 +38,11 @@ body{
 .container-title{
     text-align: center;
     margin: 0 auto;
-    width: 90%;
-    transform: translateY(80px);
+    width: 100%;
+    margin-bottom: 50px;
     line-height: 1.5;
+    border: 1px solid red;
+    position: relative;
 }
 .container-title > h1{
    color: var(--White);
@@ -91,6 +93,7 @@ span{
     color: var(--Softred);
     font-size: 35px;
     
+    
 
 }
 .box{
@@ -101,6 +104,9 @@ span{
     box-shadow: 0 10px 1px 0 rgba(0,0,0,0.25);
     border-radius: 7px 7px 7px 7px;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box::after{
@@ -182,7 +188,7 @@ width: 100%;
 
 @media screen and (min-width: 1024px) {
     .container-title{
-       transform: translateY(120px);
+       transform: translateY(0px);
        
     }    
 .box-content{
@@ -192,6 +198,7 @@ width: 100%;
 }
 .box{
     padding: 40px;
+    margin: 0 auto;
    
 }
 .boxs-container{
@@ -224,4 +231,10 @@ footer{
         color: blue;
     }
     
+}
+@media screen and (min-width: 1824px) {
+    .container-title{
+        transform: translateY(120px);
+        
+     }  
 }
